@@ -1,0 +1,18 @@
+/* Error: expected "{".
+ *     ,
+ * 211 | >>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
+ *     |                                                 ^
+ *     '
+ *   src/assets/_scss/_base.scss 211:49  @import
+ *   src/assets/_scss/main.scss 19:9     root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: expected "{".\a     \2577 \a 211 \2502  >>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23\a     \2502                                                  ^\a     \2575 \a   src/assets/_scss/_base.scss 211:49  @import\a   src/assets/_scss/main.scss 19:9     root stylesheet';
+}

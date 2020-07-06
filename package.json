@@ -9,21 +9,14 @@
     "build": "cross-env ELEVENTY_ENV=prod eleventy",
     "test": "yarn run build",
     "lint": "eslint . --ext .js --cache",
-<<<<<<< HEAD
     "scss": "sass ./src/assets/styles/main.scss ./src/_includes/css/main.css",
     "smoke": "npm run scss & yarn run dev",
     "fresh": "sass ./src/assets/_scss --watch",
-    "dome": "npm run fresh & npm run smoke"
-=======
-    "scss": "sass src/assets/_scss/main.scss src/_includes/css/main.css",
-    "smoke": "npm run scss & yarn run dev",
-    "fresh": "sass src/assets/_scss/main.scss src/_includes/css/main.css --watch",
     "dome": "npm run fresh & npm run smoke"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TryGhost/eleventy-starter-ghost.git"
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
   },
   "keywords": [
     "eleventy",
@@ -50,21 +43,11 @@
     "dotenv": "^8.0.0",
     "eleventy-plugin-lazyimages": "liamfiddler/eleventy-plugin-lazyimages",
     "eleventy-plugin-local-images": "^0.4.0",
-<<<<<<< HEAD
-    "eslint-utils": "2.1.0",
-    "fs-extra": "^9.0.1",
-    "html-minifier": "^4.0.0",
-    "liquid": "^4.0.1",
-    "liquidjs": "^9.14.0",
-    "path": "^0.12.7",
-    "sass": "^1.26.9"
-=======
     "eslint-utils": "2.0.0",
     "fs-extra": "^9.0.1",
     "html-minifier": "^4.0.0",
     "path": "^0.12.7",
     "sass": "^1.26.8"
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
   },
   "devDependencies": {
     "eslint": "6.8.0",

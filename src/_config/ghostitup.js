@@ -1,5 +1,3 @@
-const sass = require('./src/_config/scss.js');
-sass('./src/assets/styles/main.scss', './src/_includes/css/main.css');
 const fs = require("fs");
 
 const ghostContentAPI = require("@tryghost/content-api");
