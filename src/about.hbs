@@ -1,0 +1,33 @@
+{{!< default}}
+{{navigation}}
+
+
+
+    <main id="content" class="content bg-dark">
+        {{> "content/about-us/lotofballs"}}
+        {{> "content/about-us/basics"}}
+        
+		{{> "content/about-us/services"}}
+        		{{> "content/about-us/faq"}}
+
+        		{{> "brand/testimonials"}}
+
+		{{> "brand/client-logos"}}
+   
+		{{> "layout/latestposts"}}
+   
+		{{> "ui/emailsqueeze"}}
+
+
+
+
+	</main><!-- /#content.content -->
+
+   {{#contentFor "styles"}}
+   {{/contentFor}}
+   {{#contentFor "scripts"}}
+   <script src="{{asset "js/theme-vendors.js"}}"></script>
+   <script src="{{asset "js/theme.min.js"}}"></script>
+    {{/contentFor}}
+
+    

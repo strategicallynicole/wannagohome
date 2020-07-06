@@ -1,0 +1,62 @@
+{{!< default}}
+
+{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
+
+{{#author}}
+
+<div class="post-info-wrapper post-presentation active lazy {{#if cover_image}}background{{else}}background-pattern{{/if}}"
+{{#if cover_image}}data-src="{{cover_image}}"{{/if}}>
+    <div class="gradient gradient1">
+        <div class="container d-flex align-items-center">
+            <div class="row align-items-center w-100">
+                <div class="col-sm-12 col-md-12 col-lg col-xs-12">
+                    <div class="d-xs-block d-sm-flex align-items-center">
+                        {{#if profile_image}}
+                            <div class="author-image-wrapper animated fadeInLeft">
+                                <div class="author-image background lazy" data-src="{{profile_image}}"></div>
+                            </div>
+                        {{/if}}
+                        <div class="author-info-wrapper">
+                            <h2 class="animated fadeInDown">{{name}}</h2>
+                            {{#if location}}<p class="d-block mt-0 animated fadeInUp"><i class="fa fa-map-marker"></i> {{location}}</p>{{/if}}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg col-xs-12">
+                    {{#if bio}}<p class="author-bio d-block animated fadeInUp">{{bio}}</p>{{/if}}
+                </div>
+            </div>
+        </div>
+
+        <!-- AUTHOR INFO -->
+        <div class="author-wrapper post-presentation container">
+            <div class="d-flex justify-content-between align-items-center">
+                <p class="author-post-count mt-0 animated fadeIn"><i class="fas fa-pencil-alt"></i> {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}</p>
+                <div class="share-icons icons-visible animated fadeIn">
+                    <div class="icon-container">
+                        <div class="icons">
+                            {{#if website}}<a href="{{website}}"><i class="fa fa-globe"></i></a>{{/if}}
+                            {{#if facebook}}<a href="{{facebook_url}}"><i class="fab fa-facebook-f"></i></a>{{/if}}
+                            {{#if twitter}}<a href="{{twitter_url}}"><i class="fab fa-twitter"></i></a>{{/if}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{/author}}
+
+{{! Latest Post - Go to partials/latestPost.hbs to view this partial. }}
+{{> "latestPost"}}
+
+<div id="main">
+    <div class="container">
+        {{! Post Loop - Go to partials/postLoop.hbs to view this partial. }}
+        {{> "postLoop"}}
+    </div>
+</div>
+
+{{! Pagination - Go to partials/pagination.hbs to view this partial. }}
+{{pagination}}

@@ -1,0 +1,29 @@
+
+.neuicon {
+fill: linear-gradient(134.61deg, #26272B 9.53%, #34393F 95.92%);
+background: linear-gradient(134.61deg, #26272B 9.53%, #34393F 95.92%);
+box-shadow: 10px 10px 40px #0D0E0F, -10px -10px 40px #40464E;
+border-radius: 40px;
+color: #fff;
+font-size: 50px;
+@mixin hovers {
+    &:hover {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+     }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
+
+.neuicon::after {
+    opacity: 0;
+    color: #fff;
+    background: linear-gradient(141.25deg, #26272B 9.53%, #34393F 95.92%);
+border: 1px solid #2D2F34;
+/* IconDownEffect */
+box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
+}
+
+

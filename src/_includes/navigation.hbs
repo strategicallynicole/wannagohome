@@ -1,0 +1,73 @@
+			<header class="main-header main-header-overlay pt-30">
+
+				<div class="mainbar-wrap">
+					<div class="megamenu-hover-bg"></div><!-- /.megamenu-hover-bg -->
+					<div class="container-fluid mainbar-container">
+						<div class="mainbar mb-10 mt-20">
+							<div class="row mainbar-row align-items-lg-stretch px-4">
+
+								<div class="col">
+
+									<div class="navbar-header">
+										<a class="navbar-brand" href="{{@site.url}}" rel="home">
+											<span class="navbar-brand-inner">
+												<img width="200" class="logo-dark" src="{{asset "img/logosfinal/logo_logo-full-flat-purple-white.svg"}}" alt="OAKWAVE">
+												<img width="200" class="logo-light" src="{{asset "img/logosfinal/logo_logo-full-flat-purple-white.svg"}}" alt="OAKWAVE">
+												<img width="100" class="logo-sticky" src="{{asset "img/logosfinal/logo-full-stacked-purple-white.svg"}}" alt="OAKWAVE">
+												<img width="100"  class="mobile-logo-default" src="{{asset "img/logosfinal/logo_logo-full-stacked-purple-white.svg"}}" alt="OAKWAVE">
+												<img width="200"  class="logo-default" src="{{asset "img/logosfinal/logo_logo-full-flat-purple-white.svg"}}" alt="OAKWAVE">
+											</span>
+</a>										<button type="button" class="navbar-toggle collapsed nav-trigger style-mobile" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" data-changeclassnames='{ "html": "mobile-nav-activated overflow-hidden" }'>
+											<span class="sr-only">Toggle navigation</span>
+											<span class="bars">
+												<span class="bar"></span>
+												<span class="bar"></span>
+												<span class="bar"></span>
+											</span>
+										</button>
+									</div><!-- /.navbar-header -->
+
+								</div><!-- /.col -->
+
+								<div class="col text-right">
+
+									<div class="collapse navbar-collapse navbar-visible-ontoggle collapsed" id="main-header-collapse" aria-expanded="false" role="tablist">
+										
+										<ul class="main-nav main-nav-hover-underline-2 nav align-items-lg-stretch justify-content-lg-end" data-submenu-options='{"toggleType":"fade","handler":"mouse-in-out"}'>
+											{{#foreach navigation}}
+											  <li class="nav-{{slug}}{{#if current}} current-menu-item{{/if}}">
+
+												<a href="{{url absolute="true"}}">
+														<span class="link-icon"></span>
+														<span class="link-txt">
+															<span class="link-ext"></span>
+															<span class="txt">{{label}}</span>
+													</span>
+												</a></li>
+											{{/foreach}}
+										
+				
+										</ul>
+
+									</div><!-- /.collapse -->
+
+									<div class="header-module">
+										<button class="nav-trigger collapsed style-1 scheme-light txt-left main-nav-trigger" role="button"
+											type="button" data-toggle="collapse" data-target="#main-header-collapse" aria-expanded="false" aria-controls="main-header-collapse"
+											data-changeclassnames='{ "html": "overflow-hidden" }'>
+											<span class="bars">
+												<span class="bar"></span>
+												<span class="bar"></span>
+												<span class="bar"></span>
+											</span>
+										</button>
+									</div><!-- /.header-module -->
+
+								</div><!-- /.col -->
+
+							</div><!-- /.mainbar-row -->
+						</div><!-- /.mainbar -->
+					</div><!-- /.mainbar-container -->
+				</div><!-- /.mainbar-wrap -->
+
+			</header>

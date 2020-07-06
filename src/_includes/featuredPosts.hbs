@@ -1,0 +1,62 @@
+{{#get "posts" limit="3" filter="featured:true" include="tags,authors"}}
+<div class="hero-unit">
+    <div id="featured-news-carousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            {{#foreach posts visibility="all"}}
+                <div class="carousel-item post-presentation lazy {{#if @first}}active{{/if}} {{#if feature_image}}background{{else}}background-pattern{{/if}}"
+                {{#if feature_image}}data-src="{{feature_image}}"{{/if}}>
+                    <div class="gradient gradient1 d-flex align-items-center">
+                        <div class="container d-flex align-items-center">
+                            <div class="row">
+                                <div class="col-sm-12 col-md col-lg col-xs-12">
+                                    {{#if @labs.members}}<span class="badge animated fadeInDown post-visibility {{#if @labs.members}}post-{{visibility}}{{/if}}">{{visibility}}</span>{{/if}}
+                                    <h1 class="animated fadeInUp">{{title}}</h1>
+                                    <div class="post-tags animated fadeIn">
+                                        {{#foreach tags limit="2"}}
+                                            <a href="{{url}}">{{name}}</a>
+                                        {{/foreach}}
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md col-lg col-xs-12">
+                                    <p class="animated fadeInDown d-none d-md-block {{#if @labs.members}}spacing-{{visibility}}{{/if}}">{{excerpt words="30"}}</p>
+                                    <a href="{{url}}" class="btn btn-no-background animated fadeIn">{{t "Read Post"}} <i class="fa fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {{/foreach}}
+        </div>
+
+        <!-- MOBILE CAROUSEL CONTROLS -->
+
+        <a class="carousel-control-prev d-md-none" href="#featured-news-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next d-md-none" href="#featured-news-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+        <!-- CAROUSEL INDICATORS -->
+        <div class="container indicator-container">
+            <div class="row carousel-indicators">
+                {{#foreach posts visibility="all"}}
+                <div class="d-none d-md-flex align-items-center col-md-4 col-lg-4 indicator {{#if @first}}active{{/if}}" data-target="#featured-news-carousel" data-slide-to="{{@index}}">
+                    <div class="indicator-index">
+                        <h1>{{@number}}</h1>
+                    </div>
+                    <div class="indicator-content">
+                        <h4>{{title}}</h4>
+                        {{#primary_author}}
+                            <p>{{t "by"}} <a href="{{url}}">{{name}}</a></p>
+                        {{/primary_author}}
+                    </div>
+                </div>
+                {{/foreach}}
+            </div>
+        </div>
+    </div>
+</div>
+{{/get}}

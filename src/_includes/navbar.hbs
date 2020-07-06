@@ -1,0 +1,59 @@
+<!-- MAIN NAVBAR -->
+<div id="main-navbar">
+    <nav class="navbar">
+        <div class="container">
+            {{#if @site.logo}}
+                <a class="navbar-brand" href="{{@site.url}}">
+    			<!-- DUAL LOGO SWITCHER
+    			<img alt="{{@site.title}}" class="img-fluid lazy logo-dark" src="{{asset "images/logo-dark.png"}}" />
+    			<img alt="{{@site.title}}" class="img-fluid lazy logo-light" src="{{asset "images/logo-light.png"}}" />
+    			-->
+    			<!-- SINGLE LOGO -->
+    			<img alt="{{@site.title}}" class="img-fluid lazy" src="{{@site.logo}}" />
+    		</a>
+            {{else}}
+                <a class="navbar-brand" href="{{@site.url}}">{{@site.title}}</a>
+            {{/if}}
+            <div class="mobile-navbar-buttons">
+                {{#if @site.navigation}}
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar-content" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                {{/if}}
+                <button class="search-panel-toggle d-lg-none btn-control navbar-toggler" type="button"><i class="fa fa-search"></i></button>
+                {{#if switcher}}
+                    <div class="dropdown">
+                        <a href="#" class="nav-link change-theme-color dropdown-toggle nav-link navbar-toggler d-lg-none btn-control" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="alternate"><i class="fa fa-adjust"></i></a>
+                        {{> color-selector}}
+                    </div>
+                {{/if}}
+                {{#if @labs.members}}
+                    {{> members-dropdown mobile="true"}}
+                {{/if}}
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="main-navbar-content">
+                <ul class="navbar-nav">
+                    {{navigation}}
+                    <li class="nav-item d-none d-lg-block">
+                        <a class="btn-control nav-link search-panel-toggle"><i class="fa fa-search"></i></a>
+                    </li>
+                    {{#if switcher}}
+                        <li class="nav-item d-none d-lg-block">
+                            <div class="dropdown">
+                                <a href="#" class="nav-link change-theme-color dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="alternate"><i class="fa fa-adjust"></i></a>
+                                {{> color-selector}}
+                            </div>
+                        </li>
+                    {{/if}}
+                    {{#if @labs.members}}
+                        <li class="nav-item d-none d-lg-block">
+                            {{> members-dropdown}}
+                        </li>
+                    {{/if}}
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+{{#if switcher}}<script>switcherActive = true;</script>{{/if}}

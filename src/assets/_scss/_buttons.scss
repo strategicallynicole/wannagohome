@@ -1,0 +1,69 @@
+
+.btn-primary {
+    border-color: #121212;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 transparent;
+}
+
+.btn {
+    border-radius: 0;
+    padding: 10px 25px;
+}
+
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-md {
+    border-radius: 0;
+    padding: 13px 46px;
+}
+
+.btn-md:focus {
+    box-shadow: none;
+}
+
+.btn-sm {
+    border-radius: 0;
+    padding: 10px 25px;
+    color: #fff;
+}
+
+.btn-sm:focus {
+    box-shadow: none;
+}
+
+.btn-xs {
+    border-radius: 0;
+    padding: 6px 30px;
+}
+
+.btn-xs:focus {
+    box-shadow: none;
+}
+
+.btn-xxs {
+    border-radius: 0;
+    padding: 3px 24px;
+}
+
+.btn-xxs:focus {
+    box-shadow: none;
+}
+
+
+.btn-red {
+    background-color: #6c5ba7;
+    color: #fff;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.btn-red:hover {
+    color: #fff;
+    background-color: #f10c2f;
+}

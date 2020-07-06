@@ -1,0 +1,16 @@
+{{! FOOTER }}
+<footer id="rights" class="lazy {{#if @site.cover_image}}background{{else}}background-pattern{{/if}}"
+{{#if @site.cover_image}}data-src="{{@site.cover_image}}"{{/if}}>
+    <div class="gradient gradient2">
+        <div class="container d-md-flex align-items justify-content-between">
+            <p>{{@site.title}} &copy; {{date format="YYYY"}}.</p>
+            <div class="social-icons">
+                {{#if @site.facebook}}<a href="{{facebook_url @site.facebook}}" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>{{/if}}
+                {{#if @site.twitter}}<a href="{{twitter_url @site.twitter}}" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>{{/if}}
+                <a href="{{@site.url}}/rss/" taget="_blank" rel="noopener"><i class="fa fa-rss"></i></a>
+            </div>
+        </div>
+        {{! Terms - Open the terms.hbs file to edit this partial }}
+        {{> "terms"}}
+    </div>
+</footer>

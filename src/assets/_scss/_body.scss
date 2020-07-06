@@ -1,0 +1,126 @@
+.content-title {
+    color: #fff;
+  }
+
+body.light-mode {
+    background-color: #000;
+}
+
+body.light-mode .footer-wrapper .footer-tag.owl-carousel .owl-dots button.owl-dot.active {
+    background-color: #1a2024 !important;
+}
+
+body.light-mode .main-menu .menubar .menubars span, body.light-mode .main-menu .menubar .menubars span:before, body.light-mode .main-menu .menubar .menubars span:after {
+    background-color: #000;
+}
+
+body.light-mode .main-menu .mainmenu-list {
+    background-color: #000;
+}
+
+body.light-mode .main-menu .mainmenu-list ul li a {
+    color: #1a2024;
+}
+
+body.light-mode .main-menu .mainmenu-list ul li ul {
+    background-color: #000;
+}
+
+body.light-mode .header-area, body.light-mode .header-area .container-fluid, body.light-mode .footer-wrapper, body.light-mode .social-share-post .share-post, body.light-mode .footer-wrapper .subscribe-section .subscribe-form .form-group .form-control, body.light-mode .single-post-content ul li::before {
+    background-color: #000;
+}
+
+body.light-mode .ln-card .card-content, body.light-mode .logo::before, body.light-mode .featured-slider-area:before, body.light-mode .featured-slider:before, body.light-mode .header-area:before, body.light-mode .main-menu .menubar, body.light-mode .tag-banner, body.light-mode .author-card-wrapper .author-card, body.light-mode .author-banner, body.light-mode .author-banner-wrapper.banner-split:after, body.light-mode .single-post-content blockquote:nth-child(3n+3), body.light-mode .single-post-content blockquote:nth-child(3n+2), body.light-mode :not(pre) > code[class*='language-'], body.light-mode pre[class*='language-'], body.light-mode .single-portfolio-wrapper .portfolio-description .project-full-details.content-bg, body.light-mode .pl-banner::before, body.light-mode .banner-before::before, body.light-mode .sb-content-wrap {
+    background-color: #718093;
+}
+
+body.light-mode .blog-sidebar {
+    background-color: #7f8fa6;
+}
+
+body.light-mode .header-right ul li a, body.light-mode .expanded-search .search-icon, body.light-mode .section-title h1, body.light-mode .section-title h2, body.light-mode .section-title h3, body.light-mode .section-title h4, body.light-mode .section-title h5, body.light-mode .section-title h6, body.light-mode .single-top-author h4, body.light-mode .single-top-author h4 a, body.light-mode .social-share-post .share-post li a, body.light-mode .single-top-author h3 a, body.light-mode .top-author-meta span a, body.light-mode .single-post-content blockquote:nth-child(3n+1), body.light-mode .single-post-content ul li, body.light-mode .single-post-content .table th, body.light-mode .single-post-content .table td, body.light-mode .single-post-content figcaption, body.light-mode .single-post-content ul, body.light-mode .single-post-content ol, body.light-mode .single-portfolio-wrapper .portfolio-description .project-full-details ul li, body.light-mode .single-portfolio-wrapper .portfolio-description .project-full-details ul li a, body.light-mode textarea, body.light-mode input:not([type='submit']), body.light-mode h1, body.light-mode h2, body.light-mode h3, body.light-mode h4, body.light-mode h5, body.light-mode h6, body.light-mode p, body.light-mode .gear-sliders {
+    color: #1a2024;
+}
+
+body.light-mode .top-author-meta span, body.light-mode .post-meta p a, body.light-mode .post-meta p, body.light-mode .author-meta a, body.light-mode .author-meta, body.light-mode .ln-card .card-content p, body.light-mode .footer-wrapper .footer-tag .single-tag .tag-name h6, body.light-mode .footer-wrapper .footer-tag .single-tag .tag-name p, body.light-mode .single-slide-content h2, body.light-mode .single-slide-content p, body.light-mode .tag-banner .tag-banner-text h2, body.light-mode .tag-banner .tag-banner-text p, body.light-mode .author-banner .author-banner-text h2, body.light-mode .author-card-wrapper .author-card .about-card-text p, body.light-mode .author-card-wrapper .author-card .card-text p, body.light-mode .author-banner .author-banner-text p, body.light-mode .top-author-meta span a, body.light-mode .single-post-content blockquote:nth-child(3n+3), body.light-mode .single-post-content blockquote:nth-child(3n+2), body.light-mode .single-portfolio-wrapper .portfolio-description .project-full-details.content-bg h4, body.light-mode .single-portfolio-wrapper .portfolio-description .project-full-details.content-bg .project-info h6, body.light-mode .single-portfolio-wrapper .portfolio-description .project-full-details.content-bg .project-info p, body.light-mode .single-portfolio-wrapper .portfolio-description .project-full-details.content-bg ul li, body.light-mode .single-portfolio-wrapper .portfolio-description .project-full-details.content-bg ul li a, body.light-mode .single-blog-sec h1, body.light-mode .sb-content-wrap h2, body.light-mode .sb-content-wrap h3, body.light-mode .sb-content-wrap h4, body.light-mode .sb-content-wrap h5, body.light-mode .sb-content-wrap h6, body.light-mode .sb-content-wrap p, body.light-mode .single-post-content ul li, body.light-mode .sb-author .a-name, body.light-mode .subscribe-block input, body.light-mode .pp-item .pp-date, body.light-mode .about-us .a-desc, body.light-mode .tf-item, body.light-mode .comment-form .form-control, body.light-mode .expanded-search .search-icon:hover i, body.light-mode .footer-wrapper .subscribe-section.has-thumbimage .subscribe-text h2, body.light-mode .footer-wrapper .subscribe-section.has-thumbimage .subscribe-text p {
+    color: #fff;
+}
+
+body.light-mode .expanded-search .search-icon, body.light-mode .header-right ul {
+    border-color: #1a2024;
+}
+
+body.light-mode .footer-wrapper .subscribe-section {
+    background: #dcdde1;
+}
+
+body.light-mode .footer-wrapper .subscribe-section .subscribe-text h2, body.light-mode .footer-wrapper .subscribe-section .subscribe-text p {
+    color: #1a2024;
+}
+
+body.light-mode .latest-news .ln-carousel button img {
+    filter: brightness(0);
+}
+
+body.light-mode .tag-item .tag-item-inner {
+    background: linear-gradient(to right, #718093 0%, rgba(104, 110, 115, 0) 100%);
+}
+
+body.light-mode .tag-banner.banner-overlay:before, body.light-mode .portfolio-card .card-content, body.light-mode .footer-wrapper .subscribe-section.has-thumbimage:before {
+    background-color: rgba(113, 128, 147, 0.6);
+}
+
+body.light-mode .single-slide:before {
+    background-color: rgba(113, 128, 147, 0.3);
+}
+
+body.light-mode .single-post-content blockquote:nth-child(3n+2)::before, body.light-mode .expanded-search .search-icon:hover {
+    border-color: #6c5ba7;
+}
+
+body.light-mode .delas-map, body.light-mode textarea:focus, body.light-mode input:not([type='submit']):focus, body.light-mode .pagination-section a i, body.light-mode .expanded-search .search-icon {
+    border-color: #718093;
+}
+
+body.light-mode .pagination-section a {
+    color: #718093;
+}
+
+body.light-mode .pagination-section a i {
+    border-color: #718093;
+    color: #718093;
+}
+
+body.light-mode .pagination-section a:hover i {
+    background-color: #718093;
+    color: #fff;
+}
+
+body.light-mode .pagination-section a.active {
+    color: #6c5ba7;
+}
+
+body.light-mode .comment-lists ul li, body.light-mode .comment-lists ul li ul li:first-child, body.light-mode .comment-form .form-control, body.light-mode .comment-wrap-title h4, body.light-mode .subscribe-block input:not([type='submit']) {
+    border-color: #b1b1b1 !important;
+}
+
+body.light-mode .sb-content-wrap .border, body.light-mode .sb-content-wrap .border-top, body.light-mode .sb-content-wrap .border-right, body.light-mode .sb-content-wrap .border-bottom, body.light-mode .sb-content-wrap .border-left {
+    border-color: #b1b1b1 !important;
+}
+
+body.light-mode .expanded-search .search-box {
+    background-color: #000;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode.medium-zoom--opened .medium-zoom-overlay {
+    background-color: #fff !important;
+}
+
+body.light-mode #preloader {
+    background: #fff;
+}
+
+body.light-mode .preloader-wave:before, body.light-mode .preloader-wave:after {
+    background: #718093;
+}

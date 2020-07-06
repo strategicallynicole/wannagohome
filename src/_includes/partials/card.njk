@@ -1,0 +1,94 @@
+
+
+{% macro card(post) %}
+<<<<<<< HEAD
+  <div class="neucardcontainer mb-50 mt-10">
+        <header class="post-card-header">
+            {% if post.feature_image %}
+             <figure class="neucardimage" style="background-image: url({{ post.feature_image }});">
+				<a href="{{ post.url }}">	<img class="neucardimage" src="{{ post.feature_image }}" alt="{{ title }}"></a>
+			</figure>
+            {% endif %}
+
+            	<div>
+
+									<div class="fancy-box-header">
+
+						<span class="fancy-box-time-container"><i class="fad fa-clock"></i>   {{ post.html | safe | getReadingTime }} min read
+                        </span>
+<span class="fancy-box-tags-container"><i class="fad fa-tags"></i>	&nbsp;
+
+                {% if post.tags %}{% for tag in post.tags %}<a class="fancy-box-tags" href="{{ tag.url }}">{{ tag.name }}</a> {% endfor %}{% endif %}
+</span><div class="fancybody">
+										<h3><a class="text-white titlefancycard" href="{{ post.url }}">{{ title }}</a></h3>
+									</div><!-- /.fancy-box-header -->
+									</div>
+									<div class="fancy-box-info">
+										
+										<p class="fancypostexcerpt"><a href="{{ post.url }}" class="text-white">    {{ post.excerpt }}</a></p>
+										
+										<div class="fancy-box-footer text-center pb-30"><a href="{{ post.url }}" class="neubutton">
+													&nbsp; Read on <i class="fas fa-arrow-circle-right"></i>
+											</a>
+										
+										</div><!-- /.fancy-box-footer -->
+										
+									</div><!-- /.fancy-box-info -->
+									
+								</div><!-- /.fancy-box-contents -->
+								
+							</div><!-- /.fancy-box fancy-box-travel -->
+
+
+=======
+
+
+
+<div class="column neucardcontainer">
+
+
+    <a class="post-card{% if post.featured %}  post-card-featured{% endif %}" href="{{ post.url }}">
+{% if post.feature_image %}
+
+<figure class="neucardimage" style="background-image: url({{ post.feature_image }});">
+							<img class="neucardimage" src="{{ post.feature_image }}" alt="{{ post.title }}">
+								</figure>
+            {% endif %}
+
+            <header class="post-card-header">
+            <h2 class="post-card-title white">
+                
+
+                {{ post.title }}
+            </h2>
+
+             <span class="fancy-box-tags-container"><i class="fad cardi fa-tags"></i>{% if post.tags %}{% for tag in post.tags %}{{ tag.name }} {% endfor %}{% endif %}
+                            	<span class="fancy-box-time-container"><i class="fad fa-clock"></i>{{ post.html | safe | getReadingTime }} min read</span></span>
+
+        </header>
+<div class="fancybody">
+<div class="post-card-excerpt">
+            <p class="fancy">{{ post.excerpt }}</p>
+        </div>
+        	<div class="fancy-box-footer text-center pb-30"><a href="{{ post.url }}" class="neubutton altyborder no-underline smallerbtn">
+												<span class="">
+													<span class="btn-txt purple no-underline">&nbsp; Read on &nbsp; &nbsp; <i class="fas fa-arrow-circle-right"></i></span>
+												</span>
+											</a>
+										
+										</div></div>
+
+        <footer class="post-card-footer white">
+
+            <div class="post-card-footer-left">
+   
+
+            </div>
+            <div class="white post-card-footer-right">
+            </div>
+        </footer>
+    </a>
+
+    </div>
+>>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
+{% endmacro %}

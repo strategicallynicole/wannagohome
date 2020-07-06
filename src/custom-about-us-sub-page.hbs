@@ -1,0 +1,105 @@
+{{!< default}}
+{{#contentFor "page-styles"}}
+
+    <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="{{asset "css/themes/freelancer.css"}}" />
+	<link rel="stylesheet" href="{{asset "css/theme-vendors.min.css"}}" />
+ <link rel="stylesheet" href="{{asset "css/theme.css"}}" />
+
+{{/contentFor}}
+{{#contentFor "page-scripts"}}
+		   <script src="{{asset "js/theme-vendors.js"}}"></script>
+   <script src="{{asset "js/theme.min.js"}}"></script>
+{{/contentFor}}
+{{#contentFor "body-parts"}}
+lqd-stack-buttons-style-2 header-style-fullscreen bg-dark
+{{/contentFor}}
+
+{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
+
+{{#post}}
+
+
+
+		<main id="content" class="content py-0">
+
+
+
+                         
+
+<div class="titlebar-inner text-center bg-center bg-cover" style="background: url({{asset "img/bgfull.png"}})">
+				<div class="container titlebar-container">
+					<div class="row titlebar-container">
+						<div class="titlebar-col col-md-12 text-white">
+							<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 60, "minFontSize": 32 }'>{{title}}</h1>
+						
+    <nav role="navigation" aria-label="Breadcrumbs" class="breadcrumbs">
+								<ol class="breadcrumb reset-ul inline-nav comma-sep-li">
+									<li class="breadcrumb-item"><a href="https://www.oakwave.com"><span>Home</span></a></li>
+                                    									<li class="breadcrumb-item"><a href="https://www.oakwave.com/about"><span>About</span></a></li>
+
+									<li class="breadcrumb-item active"><span>{{title}}</span></li>
+								</ol>
+							</nav>			</div><!-- /.titlebar-col -->
+					</div><!-- /.titlebar-row -->
+				</div><!-- /.titlebar-container -->
+			</div><!-- /.titlebar-inner -->
+
+		</div><!-- /.titlebar -->   
+
+			<article class="mt-6 blog-single bg-dark scheme-dark liquid-blog-scheme-dark">
+				{{> "particles"}}
+				<div class="container">
+
+
+							<div class="blog-single-content entry-content pull-up expanded">
+
+								{{{content}}}
+					<!-- /.blog-single-content entry-content -->
+					
+<div style="padding-bottom: 40px;"></div>
+
+
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+
+						</div>
+					
+
+
+				</div><!-- /.comments-area -->
+
+			</article><!-- /.blog-single -->
+
+		</main><!-- /#content.content -->
+
+
+
+
+
+{{/post}}
+
+{{!-- The #contentFor helper here will send everything inside it up to the matching #block helper found in default.hbs --}}
+
+
+{{#contentFor "post-scripts"}}
+    <script src="{{asset "built/js/extra-post.js"}}"></script>
+    <script>
+        $(document).ready(function() {
+            $("article").fitVids();
+            $( "table" ).wrap("<div class='table-responsive'></div>");
+            $(".kg-gallery-image > img").wrap("<a data-gallery='collection-gallery' data-toggle='lightbox' class='lb-item' href=''></a>");
+            $(".lb-item").each(function(e, t) {
+               $(this).attr("href", $(this).children("img").attr("src"))
+            });
+            $(document).on("click", '[data-toggle="lightbox"]', function(e) {
+               e.preventDefault(), $(this).ekkoLightbox()
+            });
+            document.querySelectorAll(".kg-gallery-image img").forEach(function(e) {
+               var t = e.closest(".kg-gallery-image"),
+                   a = e.attributes.width.value / e.attributes.height.value;
+               t.style.flex = a + " 1 0%"
+            })
+       });
+   </script>
+{{/contentFor}}

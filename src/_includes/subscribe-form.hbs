@@ -1,0 +1,23 @@
+<div class="subscribe subscribe-form">
+   <div class="container">
+       <div class="row">
+           <div class="d-block d-md-flex align-items-center justify-content-between">
+               <div class="col-sm-12 col-sm-12 col-md col-lg subscribe-title">
+                   <h3 class="subscribe-form-title">{{t "Subscribe to"}} {{@site.title}}</h3>
+                   <p class="subscribe-form-description">{{t "Register now to obtain a periodic subscription and unlock paid posts!"}}</p>
+               </div>
+               <div class="col-sm-12 col-sm-12 col-md col-lg">
+                   <form data-members-form="subscribe">
+                       <div class="form-wrapper">
+                           <input class="subscribe-email input_class" data-members-email placeholder="youremail@example.com" autocomplete="false" />
+                           <button type="submit" class="button primary btn btn-no-background">{{t "Submit"}}</button>
+                           <i class="fas fa-spinner"></i>
+                       </div>
+                       <span class="success-text">{{t "Check your inbox and click the link to confirm your subscription."}}</span>
+                       <span class="error-text">{{t "Please enter a valid email address."}}</span>
+                   </form>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>

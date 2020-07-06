@@ -1,0 +1,33 @@
+    {{!-- Each post will be output using this markup --}}
+    {{#foreach posts}}
+    <div class='post-holder'>
+        
+            {{#if @first}}
+                <article class="{{post_class}} first">
+            {{else}}
+                {{#if @last}}
+                    <article class="{{post_class}} last">
+                {{else}}
+                    <article class="{{post_class}}">
+                {{/if}}
+            {{/if}}
+        
+         <header class="post-header">                
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                <div class="post-meta"><span class="author"><i class="fa fa fa-clock fa-fw"></i> {{reading_time}} </span> <span class="post-time"><i class="fa fa fa-calendar fa-fw"></i> <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} </time> </span> {{#if tags}} <span class="post-tags "> <i class="fa fa-tags fa-fw"></i> {{tags separator=" | "}} {{/if}}</span> </div>
+         </header>
+
+            <section class="post-excerpt">
+            <div class="excerpt-image">{{img_url}}</div>
+            <p>{{excerpt}} <a href="{{url}}" class="read-more">Read More</a></p>
+         </section>
+
+        </article>
+        <div class='post-after'></div>
+    </div>
+
+    {{/foreach}}
+
+    {{!-- After all the posts, we have the previous/next pagination links --}}
+    
+    {{pagination}}

@@ -1,0 +1,58 @@
+<div class="dropdown dropdown-form subscribe subscribe-form">
+    <a href="#" class="nav-link change-theme-color dropdown-toggle {{#if mobile}}navbar-toggler d-lg-none btn-control{{/if}}" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="alternate"><i class="fa fa-user"></i></a>
+    <div class="dropdown-menu animated fadeIn" aria-labelledby="dropdownMenuButton">
+        <div class="info-wrapper">
+            {{#if @member}}
+                <p>{{t "User"}}: <strong>{{@member.email}}</strong></p>
+                {{#if @member.paid}}
+                    {{#foreach @member.subscriptions}}
+                        <hr>
+                        <p>{{t "Plan Type"}}: <strong>{{plan.nickname}}</strong></p>
+                        <p>{{t "Status"}}: <strong>{{status}}</strong></p>
+                        <p>{{t "Expires in"}}: <strong>{{date current_period_end timeago="true"}}</strong></p>
+                        <p>{{t "Price"}}: <strong>{{plan.currency_symbol}}{{price plan.amount}}</strong></p>
+                        {{cancel_link class="btn btn-control btn-no-background"}}
+                        <a class="btn btn-control btn-no-background" href="javascript:" data-members-edit-billing>{{t "Edit billing info"}}</a>
+                    {{/foreach}}
+                {{else}}
+                    <hr>
+                    <header class="checkout-plan-header">
+                        <div class="plan-price">
+                            <h6>{{t "Monthly"}}</h6>
+                            <span>{{@price.currency_symbol}}<strong>{{@price.monthly}}</strong> / {{t "month"}}</span>
+                        </div>
+                        <div class="plan-content">
+                            <p>{{t "Full access to all private posts"}}. {{t "Regular updates with new content"}}</p>
+                        </div>
+                        <a class="btn btn-control btn-no-background" href="javascript:" data-members-plan="Monthly">{{t "Subscribe"}} <i class="fa fa-chevron-right"></i></a>
+                    </header>
+                    <header class="checkout-plan-header">
+                        <div class="plan-price">
+                            <h6>{{t "Yearly"}}</h6>
+                            <span>{{@price.currency_symbol}}<strong>{{@price.yearly}}</strong> / {{t "year"}}</span>
+                        </div>
+                        <div class="plan-content">
+                            <p>{{t "Same as the monthly plan, but with one easy payment instead of 12!"}}</p>
+                        </div>
+                        <a class="btn btn-control btn-no-background" href="javascript:" data-members-plan="Yearly">{{t "Subscribe"}} <i class="fa fa-chevron-right"></i></a>
+                    </header>
+                {{/if}}
+                <hr />
+                <button class="btn btn-no-background btn-full" role="link" data-members-signout>{{t "Sign out"}}</button>
+            {{else}}
+                <form data-members-form="signin">
+                    <span>{{t "Login / Subscribe"}}</span>
+                    <div class="form-wrapper">
+                        <input class="subscribe-email input_class" data-members-email="" placeholder="youremail@example.com" autocomplete="false">
+                        <i class="fas fa-spinner"></i>
+                    </div>
+                    <span class="success-text">{{t "Check your inbox and click the link to confirm your subscription."}}</span>
+                    <span class="error-text">{{t "Please enter a valid email address."}}</span>
+                    <div class="button-wrapper">
+                        <button type="submit" class="button primary btn btn-no-background">{{t "Submit"}}</button>
+                    </div>
+                </form>
+            {{/if}}
+        </div>
+    </div>
+</div>

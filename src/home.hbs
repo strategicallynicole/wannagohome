@@ -1,0 +1,28 @@
+{{!< default}}
+<div class="mb-30 pb-60">
+{{navigation}}
+</div>
+			<main id="content" class="content bg-dark" data-liquid-stack="true" data-stack-options='{"navigation":false, "prevNextButtons":false,"prevNextLabels":{"prev":"","next":""}, "pageNumber":false, "effect":"fadeScale"}'>
+
+				{{> content/home/cthulu}}
+				{{> content/home/bob}}
+				{{> content/home/ducky}}
+				{{> content/home/cutie}}
+				{{> content/home/dragon}}
+				<!--about-->
+				
+			</main><!-- /#content.content -->
+{{#contentFor "styles"}}
+
+{{/contentFor}}
+{{#contentFor "scripts"}}
+		    <script src="{{asset "js/theme-vendors.js"}}"></script>
+			
+			           <script src="{{asset "vendors/pagePiling/dist/jquery.pagepiling.min.js"}}"></script>
+
+  			<script src="{{asset "js/theme.min.js"}}"></script>
+			
+{{/contentFor}}
+{{#contentFor "body-parts"}}
+lqd-stack-buttons-style-1 header-style-fullscreen lqd-stack-has-prevnext-buttons lqd-stack-effect-enabled lqd-stack-effect-fadeScale overflow-hidden lqd-stack-initiated pp-viewing-Section-2 lqd-stack-active-row-dark{{/contentFor}}
+   

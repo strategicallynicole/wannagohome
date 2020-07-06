@@ -1,0 +1,54 @@
+{% set title = post.title %}
+{% set codeinjection_head = post.codeinjection_head %}
+{% set codeinjection_foot = post.codeinjection_foot %}
+
+{% extends '/_layouts/default.pug' %}
+
+{% block content %}
+<div class="neucardcontainer mb-50 mt-10">
+    <article class="content">
+        {% if post.feature_image %}
+			<figure class="neucardimage" style="background-image: url({{ post.feature_image }});">
+				<a href="{{ post.url }}">	<img class="neucardimage" src="{{ post.feature_image }}" alt="{{ title }}"></a>
+			</figure>
+        {% endif %}
+
+	<div>
+									{{{svgContents 'path/to/file.svg' "add-class" "#byId" }}}
+
+									<div class="fancy-box-header">
+
+						<span class="fancy-box-time-container"><i class="fad fa-clock"></i>{{reading_time}}</span>
+<span class="fancy-box-tags-container"><i class="fad fa-tags"></i>	&nbsp;
+                                        	{{#foreach tags limit="1"}}
+							
+							
+								<a class="fancy-box-tags" href="{{ post.url }}">{{name}}</a>
+						
+						{{/foreach}}</span><div class="fancybody">
+										<h3><a class="text-white titlefancycard" href="{{ post.url }}">{{ title }}</a></h3>
+									</div><!-- /.fancy-box-header -->
+									</div>
+									<div class="fancy-box-info">
+										
+										<p class="fancypostexcerpt"><a href="{{ post.url }}" class="text-white">    {{ excerpt | safe }}</a></p>
+										
+										<div class="fancy-box-footer text-center pb-30"><a href="{{ post.url }}" class="btn white text-hover-primary smallerbtn">
+												<span>
+													<span class="btn-txt purple">&nbsp; Read on <i class="fas fa-arrow-circle-right"></i></span>
+												</span>
+											</a>
+										
+										</div><!-- /.fancy-box-footer -->
+										
+									</div><!-- /.fancy-box-info -->
+									
+								</div><!-- /.fancy-box-contents -->
+								
+							</div><!-- /.fancy-box fancy-box-travel -->
+
+{% endblock %}
+
+								
+								
+								

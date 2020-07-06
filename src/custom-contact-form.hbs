@@ -1,0 +1,44 @@
+{{!< default}}
+
+{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
+
+{{#post}}
+
+    <!-- POST INFO WRAPPER -->
+    <div class="page-info-wrapper post-presentation lazy active {{#if feature_image}}background{{else}}background-pattern{{/if}}"
+    {{#if feature_image}}data-src="{{feature_image}}"{{/if}}>
+        <div class="gradient gradient1">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 col-md col-lg col-xs-12">
+                        <h1 class="animated fadeInUp">{{title}}</h1>
+                        <p class="animated fadeInUp">{{excerpt words="10"}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{! Latest Post - Go to partials/latestPost.hbs to view this partial. }}
+    {{> "latestPost"}}
+
+    <div id="main" class="form-template">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-xs-12 col-sm-12 col-lg-8 col-md-6 post-presentation">
+                    {{{content}}}
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-4 col-md-6 post-presentation">
+                    <form>
+                        <input type="email" placeholder="{{t "Your email..."}}" class="form-control">
+                        <textarea type="text" placeholder="{{t "Your message..."}}" class="form-control"></textarea>
+                        <button type="submit" class="btn btn-no-background">{{t "Submit"}}</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-frame"></div>
+
+{{/post}}

@@ -1,0 +1,36 @@
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+    <div class="post post-square lazy post-presentation {{#is "paged"}}animated fadeInUp{{/is}} {{#if feature_image}}background{{else}}background-pattern{{/if}}"
+         {{#if feature_image}}data-src="{{feature_image}}"{{/if}}>
+        <div class="ingradient ingradient2 d-flex align-items-center">
+            {{#if @labs.members}}<span class="badge post-visibility post-{{visibility}}">{{visibility}}</span>{{/if}}
+            <div class="float-top">
+                <div href="#" class="share-icons d-none d-sm-block">
+                    <div class="icon-container">
+                        <i class="fa fa-share"></i>
+                        <div class="icons">
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580, height=300');return false;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=580, height=300');return false;"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="post-info">
+                <div class="separator"></div>
+                <h3><a href="{{url}}">{{title}}</a></h3>
+                <div class="post-tags">
+                    {{#foreach tags limit="2"}}
+                        <a href="{{url}}">{{name}}</a>
+                    {{/foreach}}
+                </div>
+            </div>
+            <div class="float-bottom">
+                {{#primary_author}}
+                    <a href="{{url}}" class="vertical-align author-info">
+                        <div class="author-image background lazy {{^if profile_image}}author-image-fill{{/if}}" {{#if profile_image}} data-src="{{profile_image}}"{{/if}}></div>
+                        {{name}}
+                    </a>
+                {{/primary_author}}
+            </div>
+        </div>
+    </div>
+</div>

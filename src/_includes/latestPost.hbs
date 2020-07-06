@@ -1,0 +1,11 @@
+{{#get "posts" limit="1" include="authors" order="published_at desc"}}
+    {{#foreach posts visibility="all"}}
+        <div class="latest-post">
+            <div class="container d-md-flex align-items-center">
+                <span class="badge badge-primary">{{t "Latest Post"}}</span>
+                <a href="{{url}}" class="d-md-inline-flex d-block">{{title}} <span>{{t "by"}} {{#primary_author}}{{name}}{{/primary_author}}</span></a>
+                {{#if @labs.members}}<span class="badge post-visibility post-{{visibility}}">{{visibility}}</span>{{/if}}
+            </div>
+        </div>
+    {{/foreach}}
+{{/get}}

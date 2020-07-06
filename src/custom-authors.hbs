@@ -1,0 +1,95 @@
+{{!< default}}
+
+{{! The tag above means: Insert everything in this file into the {body} of the default.hbs template. }}
+
+{{#post}}
+
+    <!-- POST INFO WRAPPER -->
+    <div class="page-info-wrapper post-presentation lazy active {{#if feature_image}}background{{else}}background-pattern{{/if}}" {{#if feature_image}} data-src="{{feature_image}}" {{/if}}>
+        <div class="gradient gradient1">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm-12 col-md col-lg col-xs-12">
+                        <h1 class="animated fadeInUp">{{title}}</h1>
+                        <p class="animated fadeInUp">{{excerpt words="10"}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{/post}}
+
+{{! Latest Post - Go to partials/latestPost.hbs to view this partial. }}
+{{> "latestPost"}}
+
+<div id="main">
+    <div class="container">
+        <div class="row">
+            {{#get "authors" limit="all" include="count.posts"}}
+				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+        			{{#foreach authors}}
+                        {{#if @odd}}
+		                    <div class="author-widget post-presentation">
+		                        <div class="author-cover lazy {{#if cover_image}}background{{else}}background-pattern{{/if}}"
+		{{#if cover_image}}data-src="{{cover_image}}"{{/if}}>
+		                            <div class="gradient gradient1">
+		                                <div class="share-icons icons-visible animated fadeIn">
+		                                    <div class="icon-container">
+		                                        <div class="icons">
+                                                    {{#if website}}<a href="{{website}}"><i class="fa fa-globe"></i></a>{{/if}}
+                                                    {{#if facebook}}<a href="{{facebook_url}}"><i class="fab fa-facebook-f"></i></a>{{/if}}
+                                                    {{#if twitter}}<a href="{{twitter_url}}"><i class="fab fa-twitter"></i></a>{{/if}}
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                                <div class="author-image background lazy" data-src="{{profile_image}}"></div>
+                                        <h2><a href="{{url}}">{{name}}</a></h2>
+		                            </div>
+		                        </div>
+		                        <div class="author-additional-info">
+		                            <p><i class="fa fa-map-marker"></i> {{location}}</p>
+		                        </div>
+		                        <div class="author-body">
+		                            <p>{{bio}}</p>
+		                        </div>
+		                    </div>
+                        {{/if}}
+					{{/foreach}}
+				</div>
+                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+					{{#foreach authors}}
+                        {{#if @even}}
+		                    <div class="author-widget post-presentation">
+		                        <div class="author-cover lazy {{#if cover_image}}background{{else}}background-pattern{{/if}}"
+		{{#if cover_image}}data-src="{{cover_image}}"{{/if}}>
+		                            <div class="gradient gradient1">
+		                                <div class="share-icons icons-visible animated fadeIn">
+		                                    <div class="icon-container">
+		                                        <div class="icons">
+                                                    {{#if website}}<a href="{{website}}"><i class="fa fa-globe"></i></a>{{/if}}
+                                                    {{#if facebook}}<a href="{{facebook_url}}"><i class="fab fa-facebook-f"></i></a>{{/if}}
+                                                    {{#if twitter}}<a href="{{twitter_url}}"><i class="fab fa-twitter"></i></a>{{/if}}
+		                                        </div>
+		                                    </div>
+		                                </div>
+		                                <div class="author-image background lazy" data-src="{{profile_image}}"></div>
+                                        <h2><a href="{{url}}">{{name}}</a></h2>
+		                            </div>
+		                        </div>
+		                        <div class="author-additional-info">
+		                            <p><i class="fa fa-map-marker"></i> {{location}}</p>
+		                        </div>
+		                        <div class="author-body">
+		                            <p>{{bio}}</p>
+		                        </div>
+		                    </div>
+						{{/if}}
+                	{{/foreach}}
+				</div>
+            {{/get}}
+        </div>
+    </div>
+</div>
+
+<div class="b-frame"></div>

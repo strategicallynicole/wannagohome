@@ -1,0 +1,35 @@
+<div class="checkout-form">
+    <div class="checkout-box">
+        <div class="checkout-plan">
+            <header class="checkout-plan-header">
+                <h3>{{t "Monthly"}}</h3>
+                <span>{{@price.currency_symbol}}<strong>{{@price.monthly}}</strong> / {{t "month"}}</span>
+            </header>
+            <div class="checkout-plan-content">
+                <ul>
+                    <li>{{t "Full access to all private posts"}}</li>
+                    <li>{{t "Regular updates with new content"}}</li>
+                    <li>{{t "Support independent publishing"}}</li>
+                    <li>{{t "Simple, secure card payment"}}</li>
+                </ul>
+                <a class="btn btn-control btn-no-background" href="javascript:void(0)" data-members-plan="Monthly">{{t "Choose this plan"}}</a>
+            </div>
+        </div>
+        <div class="checkout-plan">
+            <header class="checkout-plan-header">
+                <h3>{{t "Yearly"}}</h3>
+                <span>{{@price.currency_symbol}}<strong>{{@price.yearly}}</strong> / {{t "year"}}</span>
+            </header>
+            <div class="checkout-plan-content">
+                <ul>
+                    <li>{{t "Full access to all private posts"}}</li>
+                    <li>{{t "Regular updates with new content"}}</li>
+                    <li>{{t "Support independent publishing"}}</li>
+                    <li>{{t "Simple, secure card payment"}}</li>
+                    <li>{{t "One easy payment instead of 12!"}}</li>
+                </ul>
+                <a class="btn btn-control btn-no-background" href="javascript:void(0)" data-members-plan="Yearly">{{t "Choose this plan"}}</a>
+            </div>
+        </div>
+    </div>
+</div>

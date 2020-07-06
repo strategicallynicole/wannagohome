@@ -1,0 +1,33 @@
+{{!< default}}
+{{#contentFor "styles"}}
+    <link href="{{asset "built/css/extra-post.css"}}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{asset "css/errors.css"}}" />
+{{/contentFor}}
+{{#contentFor "scripts"}}
+    <script src="{{asset "js/theme-vendors.js"}}"></script>
+    <script src="{{asset "js/theme.min.js"}}"></script>
+{{/contentFor}}
+{{navigation}}
+<div class="titlebar-inner text-center bg-center bg-cover" style="background: url({{asset "img/bgfull.png"}})">
+	<div class="container titlebar-container">
+		<div class="row titlebar-container">
+  		<div class="titlebar-col col-md-12 text-white">
+				<h1 data-fittext="true" data-fittext-options='{ "maxFontSize": 60, "minFontSize": 32 }'>Error {{statusCode}}</h1>
+        <p> Error: {{message}} </p>
+        <a class="titlebar-scroll-link" href="#content" data-localscroll="true"><i class="fa fa-angle-down"></i></a>
+			</div><!-- /.titlebar-col -->
+		</div><!-- /.titlebar-row -->
+	</div><!-- /.titlebar-container -->
+</div><!-- /.titlebar-inner -->
+<main id="main" class="bg-dark">     
+  <div class="flex-column">
+    <div class="flex-row">
+      
+    </div>
+  </div>
+    <div class="error-page inner">       
+      {{>"content/gandalf"}}
+    </div>
+</main>
+                    
+   

@@ -1,0 +1,27 @@
+	<div id="comments" class="comments-area">
+        
+        <div class="comments-wrapper">
+            <div id="comments">
+                <h2>{{t "Comments?"}}</h2>
+                <p>{{t "Leave us your opinion."}}</p>
+                <div id="disqus_thread"></div>
+            </div>
+        </div>
+
+        <script>
+        var disqus_config = function () {
+            this.page.url = "{{url absolute="true"}}";
+            this.page.identifier = "ghost-{{comment_id}}";
+        };
+
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://www-oakwave-com.disqus.com/embed.js'; // Fill this value with your Disqus Embed URL.
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        </script>
+
+        <noscript>{{t "Please, enable Javascript to view comments in this site."}}</noscript>
+
+    </div><!-- /.col-md-8 -->
