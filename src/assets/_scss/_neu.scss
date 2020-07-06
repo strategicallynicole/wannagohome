@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 $bg-gradient: 333.76deg, #26272B 22.72%, #34393F 89.31%;
 $light-text-on-dark-bg: #fff;
 $purple: #6c5ba7;
@@ -7,9 +6,6 @@ $bold: 300;
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&family=Josefin+Sans:wght@300&display=swap');
 $darkchosenone: darken(#6c5ba7, 10%);
-=======
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
 .iconbox:hover, .iconbox:focus {
     box-shadow: none !important;
 }
@@ -32,7 +28,6 @@ $darkchosenone: darken(#6c5ba7, 10%);
 
     }
 }
-<<<<<<< HEAD
 @mixin bg-grad {
     background: -webkit-linear-gradient($bg-gradient) !important;
     background: -moz-linear-gradient($bg-gradient) !important;
@@ -100,32 +95,6 @@ $darkchosenone: darken(#6c5ba7, 10%);
     background-color: transparent;
   }
   
-=======
-.iconround {
-    background: linear-gradient(137.63deg, #26272B 9.53%, #34393F 95.92%);
-box-shadow: 10px 10px 40px #0D0E0F, -10px -10px 40px #40464E;
-border-radius: 40px;
-}
-
-.iconsdeep i {
-    fill: transparent;
-    font-size: 200px;
-    color: transparent;
-    background: linear-gradient(134.14deg, #26272B 9.53%, #34393F 95.92%);
-box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
-}
-
-
-
-  .bg-dark, .bg-dark-too {
-    @include neu-dark-bg;
-  }
-
-  .greedy-nav {
-    background-color: transparent;
-  }
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
   .mb-120 {
       margin-bottom: 120px;
       }
@@ -137,13 +106,8 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       margin-left: 20px;
       margin-right: 20px;
   }
-<<<<<<< HEAD
   
   
-=======
-
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
   .neu-dark-bg {
       min-height: 100%;
       @include bg-grad;
@@ -154,13 +118,7 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       font-family: 'Raleway';
       font-weight: 100;
   }
-<<<<<<< HEAD
   
-=======
-
-
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
 .neubutton, .btn {
       background: linear-gradient(165.64deg, #26272B 9.53%, #34393F 95.92%);
       box-shadow: 10px 10px 40px #0D0E0F, -10px -10px 40px #40464E;
@@ -169,24 +127,12 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       color: #fff !important;
       margin: 10px;
       padding-left: 20px;
-<<<<<<< HEAD
       padding-right: 20px;
       padding-top: 15px;
       padding-bottom: 15px; 
       @include transition;
   }
   
-=======
-      display: inline-block;
-      padding-right: 20px;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      @include transition;
-
-
-  }
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
 .neubutton::after, .btn::after {
     content: "";
     position: absolute;
@@ -199,16 +145,10 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
     border-radius: 40px;
     opacity: 0;
     @include transition;
-<<<<<<< HEAD
-=======
-
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
   }
   .btn:hover, .btn:focus, .btn:active, .neubutton:hover, button:focus, .neubutton:focus {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
-<<<<<<< HEAD
   }
   
 .btn:hover::after, .btn:active::after, .btn:focus::after, .neubutton:hover::after, .neubutton:active::after, .neubutton:focus::after  {
@@ -216,18 +156,6 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
    
   }
   .neubutton.alt::after {
-=======
-    @include border-box;
-  }
-
-.btn:hover::after, .btn:active::after, .btn:focus::after, .neubutton:hover::after, .neubutton:active::after, .neubutton:focus::after  {
-    opacity: 1;
-    @include border-box;
-
-  }
-  .neubutton.alt::after {
-    @include border-box-alt;
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     content: "";
     border-radius: 20px;
     color: #fff;
@@ -242,7 +170,6 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
     @include transition;
     background: linear-gradient(130.46deg, #2E1A47 12.58%, $chosenone 89.78%);
   }
-<<<<<<< HEAD
   
   
   
@@ -254,17 +181,10 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       color: rgba(255, 255, 255, 0.5) !important;
   }
   
-=======
-
-
-
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
   .text-chosen {
     color: $chosenone;
     font-weight: $bold;
   }
-<<<<<<< HEAD
   
   
   
@@ -284,27 +204,6 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
   }
   
     .neuicon {
-=======
-
-
-
-  .neuiconold-holder-small {
-    width: 35px;
-    height: 35px;
-  }
-
-  .neuiconold-holder-medium {
-    width: 50px;
-    height: 50px;
-  }
-
-  .neuiconold-holder-large {
-    width: 75px;
-    height: 75px;
-  }
-
-    .neuiconold {
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
       text-align: center;
       opacity: 1;
       position: relative;
@@ -314,21 +213,12 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       border-radius: 20px;
       box-shadow: 1px 1px 5px #0D0E0F, -3px -3px 9px #353B42, inset 1px 1px 9px #2D2E35;
       background: linear-gradient(128.11deg, #26272B 6.67%, #34393F 97.78%);
-<<<<<<< HEAD
   
       @include transition;
     }
   
   
     .neuicon::after {
-=======
-
-      @include transition;
-    }
-
-
-    .neuiconold::after {
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
       content: "";
       border-radius: 20px;
       position: absolute;
@@ -340,22 +230,12 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
       opacity: 0;
       background: linear-gradient(137.63deg, #26272B 9.53%, #34393F 95.92%);
-<<<<<<< HEAD
       @include transition;
     }
     .neuicon.alt::after {
       content: "";
       border-radius: 20px;
   
-=======
-
-      @include transition;
-    }
-    .neuiconold.alt::after {
-      content: "";
-      border-radius: 20px;
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
       position: absolute;
       z-index: -1;
       top: 0;
@@ -364,39 +244,11 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       height: 100%;
       box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
       opacity: 0;
-<<<<<<< HEAD
       @include transition;
       background: linear-gradient(130.46deg, #2E1A47 12.58%, $chosenone 89.78%);
     }
   
     .neuicon.altalt::after {
-=======
-
-      @include transition;
-      background: linear-gradient(130.46deg, #2E1A47 12.58%, $chosenone 89.78%);
-    }
-
-    .neubutton.altyborder {
-      padding-left: 30px;
-      border-radius: 50em;
-      padding-right: 60px;
-      border: 1px solid $purple;
-      background: linear-gradient(165.64deg, #26272B 9.53%, #34393F 95.92%);
-      box-shadow: 10px 10px 40px #0D0E0F, -10px -10px 40px #40464E;
-      border-radius: 40px;
-      width:   fit-content;
-      color: #fff !important;
-      margin: 10px;
-      padding-left: 20px;
-      display: inline-block;
-      padding-right: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      @include transition;
-      font-size: 20px;
-    }
-    .oldneuiconold.altalt::after {
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
       content: "";
       border-radius: 20px;
       position: absolute;
@@ -407,7 +259,6 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       height: 100%;
       opacity: 0;
       @include transition;
-<<<<<<< HEAD
       background: linear-gradient(130.46deg, $darkchosenone 12.58%, $chosenone 89.78%);
       box-shadow: 4px 3px 19px #0D0F0F, -5px -5px 20px #404E4A, inset 1px 1px 7px $chosenone;
   
@@ -427,28 +278,6 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
   
   
   
-=======
-
-      background: linear-gradient(130.46deg, $darkchosenone 12.58%, $chosenone 89.78%);
-      box-shadow: 4px 3px 19px #0D0F0F, -5px -5px 20px #404E4A, inset 1px 1px 7px $chosenone;
-
-    }
-    .neuiconold:hover::after {
-      opacity: 1;
-  }
-    .neuiconold:hover {
-      -webkit-transform: scale(1, 1);
-      transform: scale(1, 1);
-    }
-
-    .neuiconold:hover::after {
-        opacity: 1;
-    }
-
-
-
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     .neubutton {
       text-align: center;
       opacity: 1;
@@ -460,23 +289,12 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       padding-left: 20px;
       padding-right: 20px;
       padding-top: 5px;
-<<<<<<< HEAD
       padding-bottom: 5px; 
       display: inline-block;
       @include transition;
     }
   
   
-=======
-      padding-bottom: 5px;
-      display: inline-block;
-      @include transition;
-      @include border-box;
-
-    }
-
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     .neubutton::after {
       content: "";
       position: absolute;
@@ -490,11 +308,6 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
       border-radius: 40px;
       @include transition;
-<<<<<<< HEAD
-=======
-      @include border-box;
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     }
     .neubutton.alt::after {
       content: "";
@@ -505,27 +318,15 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       left: 0;
       width: 100%;
       height: 100%;
-<<<<<<< HEAD
       
-=======
-      @include border-box-alt;
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
       opacity: 0;
       @include transition;
   box-sizing: border-box;
   box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
-<<<<<<< HEAD
   
   background: linear-gradient(130.46deg, #2E1A47 12.58%, $chosenone 89.78%);
     }
   
-=======
-
-  background: linear-gradient(130.46deg, #2E1A47 12.58%, $chosenone 89.78%);
-    }
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     textarea, input {
       font-weight: 100;
       border: 0;
@@ -533,11 +334,6 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       width: 100%;
       color: #fff;
       padding: 15px;
-<<<<<<< HEAD
-=======
-      @include border-box;
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
       background: linear-gradient(149.55deg, #26272B 9.53%, #34393F 95.92%);
   box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
     }
@@ -548,7 +344,6 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       -webkit-transform: scale(1, 1);
       transform: scale(1, 1);
     }
-<<<<<<< HEAD
   
     .neubutton:hover::after {
         opacity: 1;
@@ -570,42 +365,13 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       background: linear-gradient(128.11deg, #26272B 6.67%, #34393F 97.78%);
             @include transition;
     }
-=======
-
-    .neubutton:hover::after {
-        opacity: 1;
-    }
-
-
-
-
-
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     .fancy-box-image:hover {
         backdrop-filter: grayscale(0.5) opacity(0.8) /* ...and on and on... */;
 
     }
-<<<<<<< HEAD
    
 
   
-=======
-
-    .neumorphic {
-        margin: 20px;
-        position: relative;
-        display: inline-block;
-        padding:   25px;
-        width: 100%;
-        height: 100%;
-        border-radius: 40px;
-        box-shadow: 1px 1px 5px #0D0E0F, -3px -3px 9px #353B42, inset 1px 1px 9px #2D2E35;
-        background: linear-gradient(128.11deg, #26272B 6.67%, #34393F 97.78%);
-              @include transition;
-      }
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     .neumorphic::after {
       content: "";
       border-radius: 40px;
@@ -620,32 +386,17 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
       box-shadow: inset 3px 3px 10px #0D0E0F, inset -3px -3px 10px #40464E;
             @include transition;
     }
-<<<<<<< HEAD
   
-=======
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     .neumorphic:hover {
       -webkit-transform: scale(1, 1);
       transform: scale(1, 1);
     }
-<<<<<<< HEAD
   
-=======
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     .neumorphic:hover::after {
         opacity: 1;
     }
 
-<<<<<<< HEAD
 .neuradius {
-=======
-
-
-
-    .neuradius {
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
     border-radius: 40px !important;
 }
 
@@ -656,11 +407,7 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
         background: linear-gradient(128.11deg, #26272B 6.67%, #34393F 97.78%);
                 @include transition;
       }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
       .neustyle::after {
         content: "";
         border-radius: 40px;
@@ -675,16 +422,11 @@ box-shadow: inset 5px 5px 22px #0D0E0F, inset -3px -3px 22px #40464E;
         opacity: 0;
         @include transition;
       }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
       .neustyle:hover {
         -webkit-transform: scale(1, 1);
         transform: scale(1, 1);
       }
-<<<<<<< HEAD
     
       .neustyle:hover::after {
           opacity: 1;
@@ -1536,22 +1278,3 @@ margin-right: 20px;
     border-radius: 40px 40px 0px 0px;
     }
       
-=======
-
-      .neustyle:hover::after {
-          opacity: 1;
-      }
-
-
-
-
-
-  .accordion-title-bordered .accordion-title a {
-      color: #ffffff;
-  }
-
-  .accordion-title-bordered .accordion-title .active a {
-      color: #6c5ba7;
-  }
-
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
