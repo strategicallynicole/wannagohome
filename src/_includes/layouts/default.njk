@@ -46,15 +46,11 @@
         {%- endblock -%}
         <script src="https://kit.fontawesome.com/dd47f1ac1c.js" crossorigin="anonymous"></script>
 
-<<<<<<< HEAD
-        {% set css %}{% include "css/styles.css" %}
+        {% set css %}
        {% include "css/main.css" %}
        {% include "css/plugins.css" %}
-       {% include "css/bootstrap.min.css" %}{% endset %}
+       {% include "css/bootstrap.min.css" %}{% include "css/styles.css" %}{% endset %}
 
-=======
-        {% set css %}{% include "css/main.css" %}{% include "css/styles.css" %}{% endset %}
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
         <style>{{ css | cssmin | safe }}</style>
 
         <script>document.documentElement.classList.remove('no-js');</script>
@@ -63,29 +59,12 @@
         {{ site.codeinjection_head | safe if site.codeinjection_head }}
         {{ codeinjection_head | safe if codeinjection_head }}
     </head>
-<<<<<<< HEAD
     <body>
-=======
-    <body class="bg-dark">
-        {% include "partials/icons.njk" %}
-        <div class="viewport">
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
 
 
-<<<<<<< HEAD
 
                         {% block content %}
                         {% endblock %}
-=======
-                <main class="site-main">
-                    <div class="container">
-                        {% block content %}
-                        {% endblock content %}
-                    </div>
-                </main>
-            </div>
-            <div class="viewport-bottom">
->>>>>>> f39daca1d4e9ed3fa718e495b1d565189a228f23
                 {% include "partials/footer.njk" %}
 
             {{ site.codeinjection_foot | safe if site.codeinjection_foot }}

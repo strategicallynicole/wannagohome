@@ -36,6 +36,7 @@
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@tryghost/content-api": "^1.2.5",
     "@tryghost/helpers": "^1.1.6",
+    "acorn": "^7.3.1",
     "clean-css": "^4.2.1",
     "cross-env": "^7.0.0",
     "datejs": "^1.0.0-rc3",
